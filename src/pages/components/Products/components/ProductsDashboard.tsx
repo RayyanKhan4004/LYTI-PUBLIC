@@ -8,6 +8,7 @@ function ProductsDashboard() {
         <div className="flex flex-col w-[600px]">
           <h1 className="font-poppin font-semibold text-[32px]">Sales Team</h1>
           <p  className="font-poppin  font-normal text-[20px] text-[#2D3F50]">
+            
             n lacinia, erat vitae lobortis lacinia, lacus magna facilisis nisi,
             a pharetra turpis felis commodo nisi. Quisque sem magna, dapibus ac
             nisi
