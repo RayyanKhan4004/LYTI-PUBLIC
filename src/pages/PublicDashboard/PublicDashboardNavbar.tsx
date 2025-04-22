@@ -2,12 +2,23 @@ import PhoneLogo from "../../assets/PhoneLogo/PhoneLogo.svg"
 import PricingLytiLogo from "../../assets/PricingPageLogos/PricingLytiLogo.svg"
 import ArrowDown from "../../assets/PublicDashboardLogos/ArrowDown.svg";
 import { Link, useNavigate } from "react-router";
-import { useState } from "react";
+import { useEffect, useState, type ReactEventHandler } from "react";
 
 function PublicDashboardNavbar() {
   const Navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
   const [DropDownType, setDropDownType] = useState("");
+  useEffect(()=>{
+    function CloseDropDown(e:any){ 
+    
+      isOpen ||   e.key === 'Escape' && setIsOpen(false)}
+    function handleEscClick(){
+   document.querySelector("body")?.addEventListener("click",CloseDropDown)
+   document.querySelector("body")?.addEventListener("keydown",CloseDropDown)
+    return removeEventListener( "click",CloseDropDown)
+    }
+    handleEscClick()
+  }, [DropDownType])
   return (
     
     <div className="flex items-center hover:cursor-pointer justify-between bg-white w-full p-4.5 font-poppin">
@@ -21,13 +32,14 @@ function PublicDashboardNavbar() {
       <div className="flex items-center gap-10">
         <div className="relative flex items-center gap-1">
           <h3
-            className="text-[14px] font-medium font-poppin"
-            onClick={() => Navigate("public/pricing")}
+            className="text-[14px] font-medium hover:cursor-pointer font-poppin"
+            onClick={() => Navigate("/pricing")}
           >
             Pricing and Free Trial
           </h3>
         </div>
         <div className="flex items-center gap-1">
+          <div className="relative">
           <h3
             className="text-[14px] font-medium font-poppin"
             onClick={() => {
@@ -38,7 +50,7 @@ function PublicDashboardNavbar() {
             Product
           </h3>
           {isOpen && DropDownType === "product" && (
-            <div className="absolute w-[491px] h-[303px] top-31 left-150 bg-[#FFFFFF] shadow-lg rounded-lg p-4 z-10 flex flex-col gap-2">
+            <div className="absolute w-fit text-nowrap h-[303px]  top-6 -left-[50%] bg-[#FFFFFF] shadow-lg rounded-lg p-4 z-10 flex flex-col gap-2">
               <div className="flex flex-col gap-5 font-poppin font-medium text-[20px] py-[24px] text-[#333333]">
                 <h2>Agent Coaching & Data Analytics</h2>
                 <h2>Transaction Management & E-Signature</h2>
@@ -48,6 +60,7 @@ function PublicDashboardNavbar() {
               </div>
             </div>
           )}
+          </div>
         </div>
         <div className="flex items-center gap-1">
           <div className="relative flex items-center gap-1">
@@ -61,9 +74,9 @@ function PublicDashboardNavbar() {
               Company
             </div>
             {isOpen && DropDownType === "company" && (
-              <div className="absolute top-6 left-0 bg-[#FFFFFF] w-[303px] h-[348px] font-poppin font-medium text-[20px] text-[#333333] gap-[15px] py-[24px] pl-[24px] shadow-lg rounded-lg p-4 z-10 flex flex-col">
-                <Link to="/public/company">Testimonials</Link>
-                <Link to="/public/Company/aboutus">About us</Link>
+              <div className="absolute top-6 left-0 bg-[#FFFFFF] w-fit text-nowrap h-[348px] font-poppin font-medium text-[20px] text-[#333333] gap-[15px] py-[24px] pl-[24px] shadow-lg rounded-lg p-4 z-10 flex flex-col">
+                <Link to="/company">Testimonials</Link>
+                <Link to="/about">About us</Link>
                 <Link to="">Our Team</Link>
                 <Link to="">Our Board of Directors</Link>
                 <Link to="">Upcoming Events</Link>

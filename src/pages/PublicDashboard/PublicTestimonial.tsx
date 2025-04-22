@@ -12,7 +12,7 @@ function PublicTestimonial({ onclick }: PublicTestimonialProps) {
 
     const handleClick = () => {
       if (onclick != false) {
-        navigate("/public/company");
+        navigate("/company");
       }
     };
   return (
