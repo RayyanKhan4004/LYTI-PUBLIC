@@ -13,3 +13,10 @@ body {
     color-scheme: Light;
   }
 }
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+.scroll-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

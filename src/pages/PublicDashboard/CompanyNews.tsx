@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 //icons
 import Cardimg from "../../assets/PublicDashboardLogos/Cardimg.svg";
 import HomeIcon from "../../assets/PublicDashboardLogos/HomeIcon.svg";
-import StadiumIcon from "../../assets/PublicDashboardLogos/StadiumIcon.svg";
+import StadiumIcon from "../../assets/PublicDashboardLogos/StadiumImg.svg";
 import UserIcon from "../../assets/PublicDashboardLogos/UserIcon.svg";
 import PublicFooter from "./PublicFooter";
 import Footerimg from "../../assets/PublicDashboardLogos/CompanyNewsBgimg.svg";
@@ -347,13 +347,13 @@ function CompanyNews() {
           <div>
             <h1 className="leading-20 text-[#262626] font-poppin font-medium text-[60px] uppercase">
               The best insights,
-              <br />{" "}
+              <br />
               <span className="bg-gradient-to-b from-[#262626] to-[#B8C2CE]  inline-block text-transparent bg-clip-text">
                 right in your inbox.
               </span>
             </h1>
           </div>
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col m-5 gap-5">
             <input
               type="text"
               className="border-[#0000004D] border-1 h-[70px] placeholder:font-poppin placeholder:text-[#00000080] placeholder:text-[14px] focus:outline-0 rounded-[16px] p-5"

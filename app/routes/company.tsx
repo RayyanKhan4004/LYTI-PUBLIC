@@ -1,5 +1,5 @@
-import Company from "../../src/pages/company/Company";
+import Compnay from "../../src/pages/PublicDashboard/CompanyDashboard";
 
 export default function CompanyRoute() {
-  return <Company />;
+  return <Compnay />;
 }

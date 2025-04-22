@@ -1,7 +1,5 @@
 import { useNavigate } from "react-router";
-import ScreenLogo from "../../../assets/PublicDashboardLogos/ScreenLogo.svg";
-import PublicDashboardNavbar from "./PublicDashboardNavbar";
-
+import ScreenLogo from "../../assets/PublicDashboardLogos/ScreenLogo.svg";
 
 function PublicNavbar() {
 const Navigate = useNavigate()
@@ -11,8 +9,7 @@ const Navigate = useNavigate()
         <div
           className="w-[100%] border-white border-3"
         >
-          <div className="flex-col w-full ">
-            <PublicDashboardNavbar />
+          <div className="flex-col w-full">
             <div className="flex items-center justify-center">
             <div
               className="flex items-center max-w-[800px] justify-center"
@@ -20,7 +17,7 @@ const Navigate = useNavigate()
               <img
                 src={ScreenLogo}
                 alt=""
-                className="w-[437px] h-[437px]"
+                className="w-[437px] h-[437px] mr-[80px]"
               />
               <div className="flex flex-col gap-[30px] font-poppin ">
                 <h1 className="font-bold text-[28px]">

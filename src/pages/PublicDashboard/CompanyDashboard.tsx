@@ -12,160 +12,152 @@ const testimonials = [
     date: "April 1, 2023",
     content:
       "I am super visual and having a clear dashboard with all the team metrics visible...",
-    image: {ProfileIcon}, 
+    image: ProfileIcon, 
   },
   {
     name: "Jane Doe",
     date: "March 15, 2023",
     content:
       "The progress tracking is amazing, very user-friendly and efficient...",
-    image: {ProfileIcon},
+    image: ProfileIcon,
   },
   {
     name: "Jane Doe",
     date: "March 15, 2023",
     content:
       "The progress tracking is amazing, very user-friendly and efficient...",
-    image: {ProfileIcon},
+    image: ProfileIcon,
   },
   {
     name: "Jane Doe",
     date: "March 15, 2023",
     content:
       "The progress tracking is amazing, very user-friendly and efficient...",
-    image: {ProfileIcon},
+    image: ProfileIcon,
   },
   {
     name: "Jane Doe",
     date: "March 15, 2023",
     content:
       "The progress tracking is amazing, very user-friendly and efficient...",
-    image: {ProfileIcon},
+    image: ProfileIcon,
   },
   {
     name: "Jane Doe",
     date: "March 15, 2023",
     content:
       "The progress tracking is amazing, very user-friendly and efficient...",
-    image: {ProfileIcon},
+    image: ProfileIcon,
   },
   {
     name: "Jane Doe",
     date: "March 15, 2023",
     content:
       "The progress tracking is amazing, very user-friendly and efficient...",
-    image: {ProfileIcon},
+    image: ProfileIcon,
   },
   {
     name: "Jane Doe",
     date: "March 15, 2023",
     content:
       "The progress tracking is amazing, very user-friendly and efficient...",
-    image: {ProfileIcon},
+    image: ProfileIcon,
   },
   {
     name: "Jane Doe",
     date: "March 15, 2023",
     content:
       "The progress tracking is amazing, very user-friendly and efficient...",
-    image: {ProfileIcon},
+    image: ProfileIcon,
   },
   {
     name: "Jane Doe",
     date: "March 15, 2023",
     content:
       "The progress tracking is amazing, very user-friendly and efficient...",
-    image: {ProfileIcon},
+    image: ProfileIcon,
   },
   {
     name: "Jane Doe",
     date: "March 15, 2023",
     content:
       "The progress tracking is amazing, very user-friendly and efficient...",
-    image: {ProfileIcon},
+    image: ProfileIcon,
   },
   {
     name: "Jane Doe",
     date: "March 15, 2023",
     content:
       "The progress tracking is amazing, very user-friendly and efficient...",
-    image: {ProfileIcon},
+    image: ProfileIcon,
   },
   {
     name: "Jane Doe",
     date: "March 15, 2023",
     content:
       "The progress tracking is amazing, very user-friendly and efficient...",
-    image: {ProfileIcon},
+    image: ProfileIcon,
   },
   {
     name: "Jane Doe",
     date: "March 15, 2023",
     content:
       "The progress tracking is amazing, very user-friendly and efficient...",
-    image: {ProfileIcon},
+    image: ProfileIcon,
   },
   {
     name: "Jane Doe",
     date: "March 15, 2023",
     content:
       "The progress tracking is amazing, very user-friendly and efficient...",
-    image: {ProfileIcon},
+    image: ProfileIcon,
   },
   {
     name: "Jane Doe",
     date: "March 15, 2023",
     content:
       "The progress tracking is amazing, very user-friendly and efficient...",
-    image: {ProfileIcon},
+    image: ProfileIcon,
   },
   {
     name: "Jane Doe",
     date: "March 15, 2023",
     content:
       "The progress tracking is amazing, very user-friendly and efficient...",
-    image: {ProfileIcon},
+    image: ProfileIcon,
   },
   {
     name: "Jane Doe",
     date: "March 15, 2023",
     content:
       "The progress tracking is amazing, very user-friendly and efficient...",
-    image: {ProfileIcon},
+    image: ProfileIcon,
   },
   {
     name: "Jane Doe",
     date: "March 15, 2023",
     content:
       "The progress tracking is amazing, very user-friendly and efficient...",
-    image: {ProfileIcon},
+    image: ProfileIcon,
   },
   {
     name: "Jane Doe",
     date: "March 15, 2023",
     content:
       "The progress tracking is amazing, very user-friendly and efficient...",
-    image: {ProfileIcon},
+    image: ProfileIcon,
   },
-  // add more
 ];
-// interface testimonialsProps{
-//   t : {
-//     name: string;
-//     date: string;
-//     content: string;
-//     image: string;
-//   }
-// }
 const TestimonialSlider = () => {
   
   const scrollRef = useRef<HTMLDivElement>(null);
 
-  const scroll = (direction: string) => {
+ function scroll (direction: string) {
     if (scrollRef.current) {
       scrollRef.current?.scrollBy({
-        left: direction === "left" ? -300 : 300,
+        left: direction === "left" ? - 300 : 300,
         behavior: "smooth",
+
       });
     }
   };
@@ -178,17 +170,17 @@ const TestimonialSlider = () => {
             <h3 className="text-[36px] text-[#2D3F50] font-semibold">Don’t just take our word for it</h3>
             <h4 className="text-[24px] text-[#15120F] font-normal ">The results speak for themselves. See how Sisu has helped real clients take their businesses to the next level.</h4>
       </div>
-      <div className="relative w-full">
+      <div className="relative w-full z-0">
         {/* Slider Controls */}
         <button
           onClick={() => scroll("left")}
-          className="absolute flex items-center justify-center left-2 top-1/2 -translate-y-1/2 z-10 bg-[#E5E5E5] shadow p-2 w-[60px] h-[60px] rounded-[10px]"
+          className="absolute flex items-center justify-center left-2 top-1/2 -translate-y-1/2 z-[100] bg-[#E5E5E5] shadow p-2 w-[60px] h-[60px] rounded-[10px]"
         >
           <ChevronLeft />
         </button>
         <button
           onClick={() => scroll("right")}
-          className="absolute right-2 flex items-center justify-center top-1/2 -translate-y-1/2 z-10 bg-[#000000] shadow p-2 w-[60px] h-[60px] rounded-[10px]"
+          className="absolute right-2 flex items-center justify-center top-1/2 -translate-y-1/2 z-[100] bg-[#000000] shadow p-2 w-[60px] h-[60px] rounded-[10px]"
         >
           <ChevronRight color="#FFFFFF" />
         </button>
@@ -197,7 +189,7 @@ const TestimonialSlider = () => {
         <div className="w-full flex justify-center items-center ">
           <div
             ref={scrollRef}
-            className="flex space-x-4 overflow-x-auto scroll-smooth snap-x snap-mandatory px-8 w-[90vw] scroll-container"
+            className="flex space-x-4 overflow-x-auto scroll-smooth snap-x snap-mandatory px-8 w-[90vw] scroll-container "
           >
             {testimonials.map((t, i) => (
               <div
@@ -205,6 +197,7 @@ const TestimonialSlider = () => {
                 className="snap-center shrink-0 w-auto  flex justify-center items-center"
               >
                 <ProfileCard
+                key={Math.trunc(Math.random() * 1000) }
                   stars={5}
                   date={t.date}
                   description={t.content}
