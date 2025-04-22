@@ -1,32 +1,6 @@
-// import BoxesImage from "./assets/Boxesimg.svg";
-// function PublicRetailorCards() {
-//   return (
-//     <div>
-//       <div className="flex flex-col items-center gap-[20px]">
-//         <h1 className="font-poppin font-semibold text-[40px] text-black">
-//           Sisu Keeps the Realtor at the Center of the Transaction
-//         </h1>
-//       </div>
-//       <div className="flex flex-col gap-0 justify-center items-center">
-//         <div className="w-[10px] bg-[#D9D9D9] h-[450px]"></div>
-//         <div className="h-[250px] w-[300px] bg-white gap-[40px] flex justify-center items-center flex-col  shadow-2xl">
-//           <img src={BoxesImage} alt="" />
-//           <p>
-//             Transaction Management <br /> Software Redefined
-//           </p>
-//           <button className="bg-[#333333] pt-[12px] pb-[12px] pl-[16px] pr-[16px] text-white">
-//             Learn More
-//           </button>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
+import PublicRealtorBackground from "../../assets/PublicDashboardLogos/PublicRealtorBackground.svg"
 
-// export default PublicRetailorCards;
-import BoxesImagebg from "../../../assets/PublicDashboardLogos/PublicRealtorBackground.svg"
-
-import BoxesImage from "../../../assets/PublicDashboardLogos/Boxesimg.svg"
+import Boxesimg from "../../assets/PublicDashboardLogos/Boxesimg.svg"
 const cardData = [1, 2, 3, 4, 5];
 
 export default function SisuTransactionCenter() {
@@ -35,7 +9,7 @@ export default function SisuTransactionCenter() {
       className="m-[50px] flex flex-col items-center justify-center"
     >
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-      <img src={BoxesImagebg} alt="" className="z-0 absolute transform translate-x-[50%] taranslate-y-[50%] right-[50%] overflow-hidden " />
+      <img src={PublicRealtorBackground} alt="" className="z-0 absolute transform translate-x-[50%] taranslate-y-[50%] right-[50%] overflow-hidden " />
         {cardData.map((_, index) => (
           <div className="flex flex-col items-center z-10">
           <div className={`bg-[#D9D9D9] w-1 ${index % 2 === 1 ? "h-[200px]" : 'h-[400px]' }`} > </div>
@@ -46,7 +20,7 @@ export default function SisuTransactionCenter() {
           >
             <div className="w-[full] flex justify-center items-center h-[100%] bg-white ">
                <img
-                src={BoxesImage}
+                src={Boxesimg}
                 alt="Icon"
                 width={72}
                 height={72}

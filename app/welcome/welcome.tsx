@@ -2,7 +2,7 @@ import PublicHeadings from "../../src/pages/PublicDashboard/PublicHeadings";
 import PublicRealtor from "../../src/pages/PublicDashboard/PublicRealtor";
 import PublicTestimonial from "../../src/pages/PublicDashboard/PublicTestimonial";
 import PublicWhyChoseus from "../../src/pages/PublicDashboard/PublicWhyChoseus";
-import bg from "../assets/PublicDashboardLogos/Boxesimg.svg";
+import Boxesimg from "../../src/assets/PublicDashboardLogos/Boxesimg.svg"
 import "./Styles/Public.css";
 
 function PublicDashBoard() {
@@ -19,13 +19,13 @@ function PublicDashBoard() {
   return (
     <div>
       <PublicHeadings />
-      <PublicTestimonial onclick={false} />
+      <PublicTestimonial onclick={true} />
 
       <div className="relative m-[20px]">
         <div className="flex justify-center items-center"></div>
         <div className="flex flex-col-justify-center items-center m-[83px]">
           <img
-            src={bg}
+            src={Boxesimg}
             alt=""
             className="absolute top-0 left-0 w-full h-full -z-10"
           />

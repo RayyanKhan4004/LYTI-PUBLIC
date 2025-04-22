@@ -1,9 +1,7 @@
-// import PhoneLogo from "app/assets/PhoneLogo.svg";
-// import LytiLogo from "../../../assets/icons/LytiLogo.svg";
 import ArrowDown from "../welcome/assets/PublicDashboardLogos/ArrowDown.svg";
 import { Link , useNavigate } from "react-router";
 import { useState } from "react";
-import LytiLogo from "../assets/PricingPageLogos/PricingLytiLogo.svg"
+import PricingLytiLogo from "../../src/assets/PricingPageLogos/PricingLytiLogo.svg"
 
 function PublicDashboardNavbar() {
   const Navigate = useNavigate();
@@ -13,7 +11,7 @@ function PublicDashboardNavbar() {
     
     <div className="flex items-center hover:cursor-pointer justify-between bg-white w-full p-4.5 font-poppin">
        <img
-        src={LytiLogo}
+        src={PricingLytiLogo}
         alt="LytiLogo"
         className="w-[100px] h-[100px] font-medium text-base"
         onClick={() => Navigate("/")}

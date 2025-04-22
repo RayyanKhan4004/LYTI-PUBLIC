@@ -1,7 +1,6 @@
 // components/TestimonialSlider.jsx
 import React, { useRef } from "react";
 import ProfileCard from "./ProfileCard";
-import PublicNavbar from "./PublicNavbar";
 import PublicFooter from "./PublicFooter";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import PublicDashboardNavbar from "./PublicDashboardNavbar";
