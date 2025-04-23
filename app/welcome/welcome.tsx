@@ -2,7 +2,7 @@ import PublicHeadings from "../../src/pages/PublicDashboard/PublicHeadings";
 import PublicRealtor from "../../src/pages/PublicDashboard/PublicRealtor";
 import PublicTestimonial from "../../src/pages/PublicDashboard/PublicTestimonial";
 import PublicWhyChoseus from "../../src/pages/PublicDashboard/PublicWhyChoseus";
-import Boxesimg from "../welcome/assets/PublicDashboardLogos/BgBoxes.svg"
+import Boxesimg from "../../src/assets/PublicDashboardLogos/Boxesimg.svg"
 import "./Styles/Public.css";
 import PublicDashboardNavbar from "src/pages/PublicDashboard/PublicDashboardNavbar";
 import PublicNavbar from "src/pages/PublicDashboard/PublicNavbar";
@@ -28,7 +28,7 @@ function PublicDashBoard() {
 
       <div className="relative m-[20px]">
         <div className="flex flex-col-justify-center items-center m-[83px]">
-          <img
+        <img
             src={Boxesimg}
             alt=""
             className="absolute top-0 left-0 w-full h-full -z-10"
