@@ -41,13 +41,14 @@ function PublicDashboardNavbar() {
         <div className="flex items-center gap-1">
           <div className="relative">
           <h3
-            className="text-[14px] font-medium font-poppin"
+            className="text-[14px] font-medium font-poppin flex justify-center items-center gap-2"
             onClick={() => {
               setIsOpen(!isOpen);
               setDropDownType("product");
             }}
           >
             Product
+            <img src={ArrowDown} alt="" className="w-5 h-5" />
           </h3>
           {isOpen && DropDownType === "product" && (
             <div className="absolute w-fit text-nowrap h-[303px]  top-6 -left-[50%] bg-[#FFFFFF] shadow-lg rounded-lg p-4 z-10 flex flex-col gap-2">
@@ -58,6 +59,7 @@ function PublicDashboardNavbar() {
                 <h2>Recruiting & Onboarding</h2>
                 <h2>Integrations</h2>
               </div>
+              
             </div>
           )}
           </div>
@@ -65,13 +67,14 @@ function PublicDashboardNavbar() {
         <div className="flex items-center gap-1">
           <div className="relative flex items-center gap-1">
             <div
-              className="text-[14px] font-medium font-poppin"
+              className="text-[14px] font-medium font-poppin flex items-center justify-center gap-2"
               onClick={() => {
                 setIsOpen(!isOpen);
                 setDropDownType("company");
               }}
             >
               Company
+              <img src={ArrowDown} alt="" className="w-5 h-5" />
             </div>
             {isOpen && DropDownType === "company" && (
               <div className="absolute top-6 left-0 bg-[#FFFFFF] w-fit text-nowrap h-[348px] font-poppin font-medium text-[20px] text-[#333333] gap-[15px] py-[24px] pl-[24px] shadow-lg rounded-lg p-4 z-10 flex flex-col">
@@ -84,9 +87,9 @@ function PublicDashboardNavbar() {
               </div>
             )}
           </div>
-          <img src={ArrowDown} alt="" className="w-5 h-5" />
+          
         </div>
-        <div className="flex items-center gap-1">
+        <div className="flex justify-center items-center gap-2">
           <h3 className="text-[14px] font-medium font-poppin">Resources</h3>
           <img src={ArrowDown} alt="" className="w-5 h-5" />
         </div>
