@@ -80,7 +80,7 @@ function PublicDashboardNavbar() {
               <div className="absolute top-6 left-0 bg-[#FFFFFF] w-fit text-nowrap h-[348px] font-poppin font-medium text-[20px] text-[#333333] gap-[15px] py-[24px] pl-[24px] shadow-lg rounded-lg p-4 z-10 flex flex-col">
                 <Link to="/company">Testimonials</Link>
                 <Link to="/about">About us</Link>
-                <Link to="">Our Team</Link>
+                <Link to="/news">News</Link>
                 <Link to="">Our Board of Directors</Link>
                 <Link to="">Upcoming Events</Link>
                 <Link to="">Careers</Link>
