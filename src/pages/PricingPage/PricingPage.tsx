@@ -14,13 +14,13 @@ const GetPricing = () => {
   return (
     <div className="bg-white text-gray-800 font-sans">
       {/* Hero Section */}
-      <div className="grid grid-cols-2 relative">
+      <div className="flex flex-row relative">
         {/* Left Content with background image */}
-        <div className="relative z-20 ">
+        <div className="relative z-20  w-[50%] max-w-[50%] ">
           <img src={Bgimg} alt="" className="w-[100%]" />
 
           <div className="flex mt-[40px] flex-col">
-            <div className="bg-white bg-opacity-90 flex flex-col items-start px-[30px] py-[90] rounded">
+            <div className="bg-white bg-opacity-90 flex flex-col items-start px-[30px] py-[90] rounded ">
               <h5 className="text-[16px] text-[#333333] font-normal font-poppin mb-2">
                 Get Pricing
               </h5>
@@ -44,9 +44,9 @@ const GetPricing = () => {
         </div>
 
         {/* Right Background */}
-        <div className="bg-black w-full">
-          <div className="absolute top-1/2 left-[43%] -bottom-170 transform -translate-y-1/2 w-full max-w-fit z-20">
-            <div className="bg-[#E5E5E5] mt-[206px] rounded-xl flex flex-col items-center justify-center shadow-lg px-[40px] pb-[65px]">
+        <div className="bg-black w-[50%] max-w-[50%]">
+          <div className="absolute top-1/2 left-[43%] transform -translate-y-1/2 w-full max-w-fit z-20">
+            <div className="bg-[#E5E5E5] rounded-xl flex flex-col items-center justify-center shadow-lg px-[40px] pb-[65px]">
               <div>
                 <img
                   src={LytiLogo}

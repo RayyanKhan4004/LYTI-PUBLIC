@@ -7,6 +7,7 @@ import PublicDashboardNavbar from "../PublicDashboard/PublicDashboardNavbar";
 function Products() {
   return (
     <>
+    
     <PublicDashboardNavbar/>
     
     <div className="flex items-center justify-center w-full pt-[80px] font-semibold text-4xl font-poppin">

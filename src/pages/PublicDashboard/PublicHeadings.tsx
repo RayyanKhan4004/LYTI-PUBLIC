@@ -8,11 +8,6 @@ import LandingLogo7 from "../../assets/LandingPageLogos/LandingPageLogo7.svg";
 function PublicHeadings() {
   return (
     <div>
-      <div className="flex justify-center mb-[20px] items-center">
-        <h1 className="font-poppin text-[36px] font-semibold">
-          Trusted by over 7000 of the top teams & brokerages
-        </h1>
-      </div>
       <div className="p-15">
       <div className="flex justify-between border-t-2 p-4 border-gray-200 border-b-2">
         <img src={LandingLogo1} alt="" className="w-[109px] h-[62px]" />
