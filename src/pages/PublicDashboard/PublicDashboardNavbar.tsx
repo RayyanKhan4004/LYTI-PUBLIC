@@ -10,8 +10,8 @@ function PublicDashboardNavbar() {
   const [DropDownType, setDropDownType] = useState("");
   useEffect(()=>{
     function CloseDropDown(e:any){ 
-    
-      isOpen ||   e.key === 'Escape' && setIsOpen(false)}
+      isOpen ||   e.key === 'Escape' && setIsOpen(false)
+      isOpen  && setIsOpen(false)}
     function handleEscClick(){
    document.querySelector("body")?.addEventListener("click",CloseDropDown)
    document.querySelector("body")?.addEventListener("keydown",CloseDropDown)
