@@ -17,7 +17,7 @@ const Navigate = useNavigate()
               <img
                 src={ScreenLogo}
                 alt=""
-                className="w-[437px] h-[437px] mr-[80px]"
+                className="w-[537px] h-[537px] mr-[150px]"
               />
               <div className="flex flex-col gap-[30px] font-poppin ">
                 <h1 className="font-bold text-[28px]">
