@@ -1,5 +1,5 @@
 .testinomials-background-img{
-    background-image: url("../components/assets/TestinimialBgImg.png");
-    background: no-repeat;
+    background-image: url("../../src/assets/PublicDashboardLogos/TestinimialBgImg.png");
+    background-repeat: no-repeat;
     background-position: center;
 }

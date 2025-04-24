@@ -2,7 +2,7 @@ import PublicHeadings from "../../src/pages/PublicDashboard/PublicHeadings";
 import PublicRealtor from "../../src/pages/PublicDashboard/PublicRealtor";
 import PublicTestimonial from "../../src/pages/PublicDashboard/PublicTestimonial";
 import PublicWhyChoseus from "../../src/pages/PublicDashboard/PublicWhyChoseus";
-import Boxesimg from "../../src/assets/PublicDashboardLogos/Boxesimg.svg"
+import BoxesImg from "../../src/assets/PublicDashboardLogos/BgBoxes.svg"
 import "./Styles/Public.css";
 import PublicDashboardNavbar from "src/pages/PublicDashboard/PublicDashboardNavbar";
 import PublicNavbar from "src/pages/PublicDashboard/PublicNavbar";
@@ -28,12 +28,8 @@ function PublicDashBoard() {
 
       <div className="relative m-[20px]">
         <div className="flex flex-col-justify-center items-center m-[83px]">
-        <img
-            src={Boxesimg}
-            alt=""
-            className="absolute top-0 left-0 w-full h-full -z-10"
-          />
-          <div className="flex justify-center w-full items-center gap-[50px] ">
+          <img src={BoxesImg} alt="Background boxes pattern" className="absolute top-0 left-0 w-full h-full z-0" />
+          <div className="flex justify-center w-full items-center gap-[50px] relative z-10">
             <div className="w-[1200px] ">
               <h3 className="font-poppin font-semibold  text-[40px] mb-[20px] flex flex-row self-start">
                 Why Choose Us

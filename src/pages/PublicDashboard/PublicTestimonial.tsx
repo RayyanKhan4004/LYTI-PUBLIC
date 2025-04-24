@@ -1,6 +1,5 @@
-
 import { useNavigate } from "react-router";
-import DotsGrid from "./DotsGrid";
+import DotsGrid from "./DotsGrid"
 import ProfileCard from "./ProfileCard";
 
 interface PublicTestimonialProps{
@@ -19,18 +18,18 @@ function PublicTestimonial({ onclick }: PublicTestimonialProps) {
     <div className="w-full flex items-center mt-[80px] justify-center">
       <div className="w-fit justify-between flex items-center gap-8">
         <div className="max-w-[50%] flex flex-col gap-[20px] font-poppin relative self-start ">
-          <div className="absolute">
-            <DotsGrid />
+          <div className="absolute -left-10 -top-13">
+           <DotsGrid/>
           </div>
-          <div className="w-fit">
-           <h1 onClick={handleClick} className="hover:cursor-pointer font-bold z-50 relative text-3xl">Testimonials </h1> 
+          <div className="w-fit z-[11]">
+           <h1 onClick={handleClick} className="hover:cursor-pointer font-bold relative text-3xl">Testimonials </h1> 
            </div>
-          <p className="font-normal text-base w-[41ch] text-[#000000]">
+          <p className="font-normal text-base w-[41ch] text-[#000000] z-[11]">
             Hear from real clients about the success they're having streamlining
             and automating their business with Sisu accountability, business
             analytics and transaction management software.
           </p>
-          <div className="mt-[5px]">
+          <div className="mt-[5px]  z-[11]">
             <button className="bg-[#333333] font-poppin text-white font-semibold pt-[12px] pr-[16px] pb-[12px] pl-[16px] rounded-[10px]">
               Schedule Demo
             </button>
