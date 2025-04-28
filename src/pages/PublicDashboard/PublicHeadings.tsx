@@ -17,7 +17,7 @@ function PublicHeadings() {
         <img src={LandingLogo5} alt="" className="w-[109px] h-[62px]" />
         <img src={LandingLogo6} alt="" className="w-[109px] h-[62px]" />
         <img src={LandingLogo7} alt="" className="w-[109px] h-[62px]" />
-      </div>
+      </div> 
       </div>
     </div>
   );

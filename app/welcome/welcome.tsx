@@ -1,4 +1,3 @@
-import PublicHeadings from "../../src/pages/PublicDashboard/PublicHeadings";
 import PublicRealtor from "../../src/pages/PublicDashboard/PublicRealtor";
 import PublicTestimonial from "../../src/pages/PublicDashboard/PublicTestimonial";
 import PublicWhyChoseus from "../../src/pages/PublicDashboard/PublicWhyChoseus";
@@ -23,19 +22,18 @@ function PublicDashBoard() {
     <div>
       <PublicDashboardNavbar/>
       <PublicNavbar/>
-      <PublicHeadings />
       <PublicTestimonial onclick={true} />
 
       <div className="relative m-[20px]">
         <div className="flex flex-col-justify-center items-center m-[83px]">
           <img src={BoxesImg} alt="Background boxes pattern" className="absolute translate-y-1/2 -top-[15%] left-0 w-full h-[85%] z-0" />
           <div className="flex justify-center w-full items-center gap-[50px] relative z-10">
-            <div className="w-[1200px] ">
+            <div className="2xl:w-[1200px] ">
               <h3 className="font-poppin font-semibold  text-[40px] mb-[60px] flex flex-row self-start">
                 Why Choose Us
               </h3>
-              <div className="w-full flex flex-col gap-[50px]">
-                <div className="flex justify-start items-start gap-[20px] w-full">
+              <div className="w-full flex flex-col gap-[50px] p">
+                <div className="flex justify-start items-start gap-[20px] w-full max-md:flex-wrap">
                   {card2.map((item, ind) => (
                     <PublicWhyChoseus
                       ind={ind}
@@ -44,7 +42,7 @@ function PublicDashBoard() {
                     />
                   ))}
                 </div>
-                <div className="flex justify-end gap-[20px] items-end w-full">
+                <div className="flex justify-end gap-[20px] items-end w-full  max-md:flex-wrap">
                   {card1.map((item, ind) => (
                     <PublicWhyChoseus
                       ind={ind}

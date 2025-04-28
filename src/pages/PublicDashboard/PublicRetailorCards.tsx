@@ -8,11 +8,11 @@ export default function SisuTransactionCenter() {
     <div
       className="m-[50px] flex flex-col items-center justify-center"
     >
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-      <img src={PublicRealtorBackground} alt="" className="z-0 absolute transform translate-x-[50%] taranslate-y-[50%] right-[50%] overflow-hidden " />
+      <div className="flex flex-row flex-wrap justify-center items-center gap-6">
+      <img src={PublicRealtorBackground} alt="" className="max-xl:hidden z-0 absolute transform translate-x-[50%] taranslate-y-[50%] right-[50%] overflow-hidden " />
         {cardData.map((_, index) => (
           <div className="flex flex-col items-center z-10">
-          <div className={`bg-[#D9D9D9] w-1 ${index % 2 === 1 ? "h-[200px]" : 'h-[400px]' }`} > </div>
+          <div className={`bg-[#D9D9D9] w-1 max-2xl:hidden ${index % 2 === 1 ? "h-[200px]" : 'h-[400px]' }`} > </div>
           <div className=" bg-gradient-to-r from-white via-50% via-[#0f0f0f52] to-white rounded-xl shadow-lg !w-[250px] !h-[300px]">
           <div
             key={index}

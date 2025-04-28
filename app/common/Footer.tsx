@@ -10,7 +10,7 @@ function PublicFooter({hideImage} : {hideImage  ?: boolean}) {
           <img src={HomeImage} alt="" className="w-[1318px] h-[670px]" />
         </div>
       </div>}
-      <div className="w-full h-[524px] bg-[#333333] flex flex-row   justify-center"> 
+      <div className="w-full h-[524px] bg-[#333333] flex flex-row justify-center"> 
         <div className="flex justify-center items-center w-full h-full">
         <div className="flex w-fit justify-center items-start gap-[100px]">
         <div className="flex flex-col gap-4">
