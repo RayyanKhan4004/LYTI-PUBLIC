@@ -53,7 +53,7 @@ function PublicDashboardNavbar() {
   // }, [sidebarOpen]);
 
   return (
-    <div className="flex items-center hover:cursor-pointer flex-row-reverse lg:flex-row justify-between bg-white w-full p-4.5 font-poppin">
+    <div className="flex items-center hover:cursor-pointer flex-row-reverse xl:flex-row justify-between bg-white w-full p-4.5 font-poppin">
       <img
         src={PricingLytiLogo}
         alt="LytiLogo"
@@ -61,22 +61,22 @@ function PublicDashboardNavbar() {
         onClick={() => Navigate("/")}
       />
       <button
-        className="lg:hidden"
+        className="xl:hidden"
         onClick={() => setSidebarOpen((pre) => !pre)}
       >
         <Menu/>
       </button>
-      {sidebarOpen && ( <div
+      {/* {sidebarOpen && ( <div
       
-      className="bg-black/15  backdrop-blur-sm h-[200vh] w-[200vw] lg:hidden z-[49] fixed inset-0"></div>)}
+      className="bg-black/15  backdrop-blur-sm h-[200vh] w-[200vw] xl:hidden z-[49] fixed inset-0"></div>)} */}
       {sidebarOpen && (
 
-        <div className="max-lg:fixed top-0 left-0 relative  max-lg:bg-white  z-50 max-lg:p-6  max-lg:w-[40vw] max-lg:h-[120vh]">
+        <div className="max-xl:fixed top-0 left-0 relative  max-xl:bg-white  z-50 max-xl:p-6  max-xl:w-[100vw] max-xl:h-[160vh]">
          
-          <button className="top-6 right-6 absolute lg:hidden "
+          <button className="top-6 right-6 absolute xl:hidden "
            onClick={() => setSidebarOpen((pre) => !pre)}
           ><X/></button>
-          <div className=" max-lg:flex-col flex  max-lg:mt-12 items-center gap-10">
+          <div className=" max-xl:flex-col flex  max-xl:mt-12 items-center gap-10">
             {/* todo : implimet responsiveness using react clint */}
             <div className="relative flex items-center gap-1">
               <h3

@@ -31,7 +31,7 @@ function PublicNavbar() {
                     <div className="flex gap-[16px]">
                       <button
                         className=" bg-[#333333] text-[20px] font-semibold font-poppin text-white w-[246px] h-[54px] rounded-[10px]"
-                        onClick={() => Navigate("/public/pricing")}
+                        onClick={() => Navigate("/pricing")}
                       >
                         Pricing and Free Trial
                       </button>
