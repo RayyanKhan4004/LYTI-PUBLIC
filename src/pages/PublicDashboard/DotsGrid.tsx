@@ -6,7 +6,7 @@ function DotsGrid()  {
 
   return (
     // w-[calc(4*15px+3*27px)] h-[calc(5*15px+4*27px)]
-    <div className="relative  rotate-45 z-10 w-[250px] h-[250px] ">
+    <div className="relative  rotate-45 -z-0 w-[250px] h-[250px] ">
       {Array.from({ length: rows * cols }).map((_, i) => {
         const row = Math.floor(i / cols);
         const col = i % cols;

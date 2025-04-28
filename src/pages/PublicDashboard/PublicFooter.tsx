@@ -13,7 +13,7 @@ function PublicFooter({hideImage} : {hideImage  ?: boolean}) {
       </div>}
       <div className="w-full h-[524px] bg-[#333333] flex flex-row   justify-center"> 
         <div className="flex justify-center items-center w-full h-full">
-        <div className="flex w-fit justify-center items-start gap-[100px]">
+        <div className="flex w-fit justify-center flex-wrap items-start gap-[100px]">
         <div className="flex flex-col gap-4">
             <h3 className="font-semibold font-poppin text-[32px] text-[#E5E5E5] mb-3">Menu</h3>
             <ul className="flex flex-col gap-6">

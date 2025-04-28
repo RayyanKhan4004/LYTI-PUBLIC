@@ -28,10 +28,10 @@ function PublicDashBoard() {
 
       <div className="relative m-[20px]">
         <div className="flex flex-col-justify-center items-center m-[83px]">
-          <img src={BoxesImg} alt="Background boxes pattern" className="absolute top-0 left-0 w-full h-full z-0" />
+          <img src={BoxesImg} alt="Background boxes pattern" className="absolute translate-y-1/2 -top-[15%] left-0 w-full h-[85%] z-0" />
           <div className="flex justify-center w-full items-center gap-[50px] relative z-10">
             <div className="w-[1200px] ">
-              <h3 className="font-poppin font-semibold  text-[40px] mb-[20px] flex flex-row self-start">
+              <h3 className="font-poppin font-semibold  text-[40px] mb-[60px] flex flex-row self-start">
                 Why Choose Us
               </h3>
               <div className="w-full flex flex-col gap-[50px]">

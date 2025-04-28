@@ -9,7 +9,7 @@ function PublicNavbar() {
         <div className="w-[100%] border-white border-3">
           <div className="flex-col w-full">
             <div className="flex items-center justify-center">
-              <div className="flex items-center max-w-[800px] justify-center gap-30">
+              <div className="flex max-xl:flex-col-reverse items-center max-w-[800px] justify-center gap-30">
                 <img
                   src={ScreenLogo}
                   alt=""
