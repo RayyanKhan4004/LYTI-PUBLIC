@@ -14,7 +14,7 @@ function PublicFooter() {
         <h1 className="font-poppin font-semibold text-4xl text-[#000000]">
           Talk to a professional
         </h1>
-        <p className="font-poppin font-normal text-[20px] text-[#000000]">
+        <p className="font-poppin text-justify font-normal text-[20px] text-[#000000]">
           You’re busy. The best way to get a feel for Sisu is to hop on a demo
           with one of our experienced account executives. They’ve worked with
           hundreds of teams to help them evaluate Sisu. You’ll walk away with a

@@ -12,7 +12,7 @@ function PublicWhyChoseus({ ind, number, text }: PublicWhyChoseusProp) {
   return (
     <>
       <div
-        className={` w-[208px] h-[200px] rounded-lg flex items-center flex-col gap-[14px] text-center p-[46px] ${
+        className={` w-[208px] h-[200px] rounded-lg flex items-center flex-col gap-[14px] text-center p-[30px]  md:p-[46px] ${
           ind == 0 && gradient1
         }  ${ind == 1 && gradient2} ${ind == 2 && gradient3}`}
       >

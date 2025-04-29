@@ -29,11 +29,11 @@ function PublicDashBoard() {
           <img src={BoxesImg} alt="Background boxes pattern" className="max-xl:hidden absolute translate-y-1/2 -top-[15%] left-0 w-full h-[85%] z-0" />
           <div className="flex justify-center w-full items-center gap-[50px] relative z-10">
             <div className="2xl:w-[1200px] ">
-              <h3 className="font-poppin font-semibold  text-[40px] mb-[60px] flex flex-row self-start">
+              <h3 className="font-poppin font-semibold  md:text-[40px] text-[32px]  md:mb-[60px] mb-[30px] flex flex-row self-start text-nowrap">
                 Why Choose Us
               </h3>
-              <div className="w-full flex flex-col gap-[50px] p">
-                <div className="flex justify-start items-start gap-[20px] w-full max-md:flex-wrap">
+              <div className="w-full flex flex-col max-2xl:gap-[30px] gap-[50px] max-2xl:w-fit">
+                <div className="flex md:justify-start md:items-start items-center gap-[20px] w-full max-md:flex-wrap">
                   {card2.map((item, ind) => (
                     <PublicWhyChoseus
                       ind={ind}
@@ -42,7 +42,7 @@ function PublicDashBoard() {
                     />
                   ))}
                 </div>
-                <div className="flex justify-end gap-[20px] items-end w-full  max-md:flex-wrap">
+                <div className="flex md:justify-end gap-[20px] md:items-end items-center w-full  max-md:flex-wrap">
                   {card1.map((item, ind) => (
                     <PublicWhyChoseus
                       ind={ind}

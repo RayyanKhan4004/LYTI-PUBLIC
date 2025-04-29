@@ -13,7 +13,7 @@ function PublicNavbar() {
                 <img
                   src={ScreenLogo}
                   alt=""
-                  className="w-[537px] h-[537px]"
+                  className="md:w-[537px] md:h-[537px] w-[337px] h-[337px]"
                 />
                 <div className="flex flex-col gap-[30px] font-poppin ">
                   <h1 className="font-bold text-[28px]">

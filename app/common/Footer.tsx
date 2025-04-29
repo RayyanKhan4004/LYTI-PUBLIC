@@ -7,7 +7,7 @@ function PublicFooter({hideImage} : {hideImage  ?: boolean}) {
     <div>
      {!hideImage && <div className="w-full flex justify-center px-[60px]">
         <div className="flex items-center justify-center mt-[200px]">
-          <img src={HomeImage} alt="" className="w-[1318px] h-[670px]" />
+          <img src={HomeImage} alt="" className="2xl:w-[1318px] h-[670px]" />
         </div>
       </div>}
       <div className="w-full h-[524px] bg-[#333333] flex flex-row justify-center"> 

@@ -13,9 +13,11 @@ function Products() {
     <div className="flex items-center justify-center w-full pt-[80px] font-semibold text-4xl font-poppin">
             <h1>Build, Coach and Scale a Profitable Real Estate</h1>
         </div>
+  
         <ProductsDashboard/>
         <ProductsImages/>
         <ProductsFooter/>
+        
     </>
   );
 }
