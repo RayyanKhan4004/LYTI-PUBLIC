@@ -35,7 +35,8 @@ function PublicDashBoard() {
               <div className="w-full flex flex-col max-2xl:gap-[30px] gap-[50px] max-2xl:w-fit">
                 <div className="flex md:justify-start md:items-start items-center gap-[20px] w-full max-md:flex-wrap">
                   {card2.map((item, ind) => (
-                    <PublicWhyChoseus
+                    <PublicWhyChoseus 
+                    key={ind}
                       ind={ind}
                       number={item.num}
                       text={item.text}
@@ -45,6 +46,7 @@ function PublicDashBoard() {
                 <div className="flex md:justify-end gap-[20px] md:items-end items-center w-full  max-md:flex-wrap">
                   {card1.map((item, ind) => (
                     <PublicWhyChoseus
+                    key={ind}
                       ind={ind}
                       number={item.num}
                       text={item.text}
