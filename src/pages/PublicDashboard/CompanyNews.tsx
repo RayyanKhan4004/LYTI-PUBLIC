@@ -282,7 +282,8 @@ function CompanyNews() {
         </h3>
         <div>
           {tagsList.map((curr, i) => (
-            <button
+            <button 
+            key={i}
               onClick={() => setTag(curr)}
               className={`  ${
                 tag == curr

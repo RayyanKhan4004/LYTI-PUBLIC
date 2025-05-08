@@ -30,17 +30,17 @@ function ProfileCard({
    
       <div
         className={` backdrop-blur-[42px] overflow-hidden z-10  flex flex-col justify-center md:items-center gap-[20px] rounded-[16px] relative border border-gray-300 ${
-          w ? w : " w-[536px] max-md:max-w-[370px]"
+          w ? w : " w-[536px] max-md:max-w-[350px] max-md:p-[20px]"
         }
          ${
-          h ? h : "h-[343px] max-md:h-[272px]"
+          h ? h : "h-[343px] max-md:h-[252px]"
         }
         `}
       >
       
         <div className="-skew-y-[20deg] h-[90px] max-md:h-[65px] w-[100px] max-md:w-[70px] bg-gradient-to-b form-[#33333399] to-[#2D3F5033] rounded-lg p-4 absolute -top-2  left-0 -z-10"></div>
         <span className=" absolute top-4  text-[20px] max-md:text-lg left-8">{date}</span>
-        <div className="flex pt-[55px]  ">
+        <div className="flex pt-[55px]">
           <div className="w-full flex justify-center items-center flex-col gap-6">
             <div className="w-full flex justify-center items-center flex-col gap-3">
               <span className="text-[24px] max-md:text-xl">{name}</span>
@@ -55,19 +55,19 @@ function ProfileCard({
                   <span>{name?.slice(0, 1)}</span>
                 </div>
               )}
-              <div className="w-[460px] max-md:w-[350px] text-[16px] max-md:text-sm">{description}</div>
+              <div className="w-[460px] max-md:w-[350px] text-[16px] max-md:text-sm max-md:px-[20px]">{description}</div>
             </div>
             <div className="flex justify-between items-center w-full ">
               <div className="flex gap-2.5">
                 {Array(Math.floor(stars))
                   .fill(0)
                   .map((curr, i) => (
-                    <img src={Starsicon} alt="" />
+                    <img src={Starsicon} alt="" className="max-md:w-[24px]"/>
                   ))}
               </div>
-              <div className="text-[16px] flex gap-1">
+              <div className="text-[16px] flex items-center gap-1 max-md:text-[12px]">
                 Posted on
-                <img src={Googleicon} alt="" />
+                <img src={Googleicon} alt="" className="max-md:w-[24px]"/>
               </div>
             </div>
           </div>

@@ -10,7 +10,7 @@ function Products() {
     
     <PublicDashboardNavbar/>
     
-    <div className="flex items-center justify-center w-full pt-[80px] font-semibold text-4xl font-poppin">
+    <div className="flex items-center justify-center w-full  font-semibold max-xl:text-[18px] text-4xl font-poppin">
             <h1>Build, Coach and Scale a Profitable Real Estate</h1>
         </div>
   

@@ -8,12 +8,11 @@ const GetPricing = () => {
   return (
     <div className="bg-white text-gray-800 font-sans">
       {/* Hero Section */}
-      <div className="flex flex-row relative">
+      <div className="flex flex-row max-md:flex-col relative max-md:flex ">
         {/* Left Content with background image */}
-        <div className="relative z-20  w-[50%] max-w-[50%] ">
-          <img src={Bgimg} alt="" className="w-[100%]" />
-
-          <div className="flex mt-[40px] flex-col">
+        <div className="relative z-20 w-[50%] max-w-[50%]">
+            <img src={Bgimg} alt="" className="w-[100%]" />
+          <div className="flex justify-items-center mt-[40px] flex-col">
             <div className="bg-white bg-opacity-90 flex flex-col items-start px-[30px] py-[90] rounded ">
               <h5 className="text-[16px] text-[#333333] font-normal font-poppin mb-2">
                 Get Pricing
@@ -27,18 +26,19 @@ const GetPricing = () => {
               <ul className="list-disc pl-5 mb-[40px] font-poppin font-normal text-[20px] space-y-2">
                 <li>Boost Setting And Seals Contracts</li>
                 <li>Seamless Transaction Management</li>
-                <li>Back Office Reporting And Commission <br /> Management</li>
+                <li>
+                  Back Office Reporting And Commission <br /> Management
+                </li>
                 <li>New/Updated Client Portal</li>
                 <li>Improved Onboarding Process</li>
                 <li>Live Support 24/7</li>
               </ul>
             </div>
-            <img src={Bgimg2} alt="" className="w-[100%]" />
+              <img src={Bgimg2} alt="" className="w-[100%]" />
           </div>
         </div>
-
         {/* Right Background */}
-        <div className="bg-black w-[50%] max-w-[50%]">
+        <div className="bg-black max-md:bg-white w-[50%] max-w-[50%]">
           <div className="absolute top-1/2 left-[43%] transform -translate-y-1/2 w-full max-w-fit z-20">
             <div className="bg-[#E5E5E5] rounded-xl flex flex-col items-center justify-center shadow-lg px-[40px] pb-[65px]">
               <div>
@@ -84,17 +84,19 @@ const GetPricing = () => {
       </div>
       <div>
         <div className="flex justify-center mt-[100px] mb-[20px] items-center">
-          <h1 className="font-poppin text-[36px] font-semibold">
+          <h1 className="font-poppin text-[36px] max-md:text-[18px] max-md:pl-[20px] max-md:text-wrap font-semibold ">
             Trusted by over 7000 of the top teams & brokerages
           </h1>
         </div>
-        <div className="p-15">
-          <PublicHeadings/>
+        <div className="p-15 max-md:hidden">
+          <PublicHeadings />
         </div>
       </div>
-      <PublicTestimonial onclick={false} />
+      <div className="max-md:pt-[20px]">
+        <PublicTestimonial onclick={false} />
+      </div>
       <div className="flex justify-center items-center mb-[155px]">
-        <button className="font-poppin font-semibold rounded-[16px] text-[32px] w-[293px] h-[90px] bg-[#333333] text-[#F3F3F3]">
+        <button className="font-poppin font-semibold rounded-[16px] text-[32px] max-md:text-[16px] w-[293px] max-md:w-[157px] h-[90px] max-md:mt-[20px] max-md:h-[75px] bg-[#333333] text-[#F3F3F3]">
           Get Pricing
         </button>
       </div>

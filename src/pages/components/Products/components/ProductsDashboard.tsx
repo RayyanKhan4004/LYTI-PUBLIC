@@ -4,7 +4,7 @@ function ProductsDashboard() {
   return (
     <>
     <div className="flex items-center justify-center w-full ">
-      <div className="flex max-xl:flex-col pl-[60px] pr-[60px] gap-33.5 pt-[40px]">
+      <div className="flex max-xl:flex-col md:pl-[60px] md:pr-[60px] gap-33.5 pt-[40px]">
         <div className="flex flex-col w-[600px] max-xl:w-[300px]">
           <h1 className="font-poppin font-semibold max-xl:text-[16px] text-[32px]">Sales Team</h1>
           <p  className="font-poppin text-justify font-normal max-xl:text-[10px] text-[20px] text-[#2D3F50]">

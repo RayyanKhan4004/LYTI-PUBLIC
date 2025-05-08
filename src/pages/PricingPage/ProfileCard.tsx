@@ -42,7 +42,7 @@ function ProfileCard({
                 {Array(Math.floor(stars))
                   .fill(0)
                   .map((curr, i) => (
-                    <span> ⭐</span>
+                    <span key={i}> ⭐</span>
                   ))}
               </div>
               <div className="text-[16px] ">Posted on</div>

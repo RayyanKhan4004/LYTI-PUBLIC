@@ -34,7 +34,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body className="bg-[#F5F5F5]">
+      <body className="bg-[#F5F5F5]" cz-shortcut-listen="true">
         {children}
         <ScrollRestoration />
         <Scripts />

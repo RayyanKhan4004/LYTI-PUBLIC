@@ -11,10 +11,10 @@ function PublicFooter({hideImage} : {hideImage  ?: boolean}) {
           <img src={HomeImage} alt="" className="2xl:w-[1318px] 2xl:h-[670px] h-[450px]" />
         </div>
       </div>}
-      <div className="w-full h-[524px] bg-[#333333] flex flex-row   justify-center"> 
+      <div className="w-full  h-[524px] bg-[#333333] flex flex-row  justify-center"> 
         <div className="flex justify-center items-center w-full h-full">
         <div className="flex w-fit justify-center flex-wrap items-start gap-[100px] bg-[#333333]">
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col  max-md:mt-[40px] px-[20px]">
             <h3 className="font-semibold font-poppin text-[32px] text-[#E5E5E5] mb-3">Menu</h3>
             <ul className="flex flex-col gap-6">
                 <li className="font-poppin font-normal text-[22px] leading-[100%] text-[#FFFFFF]">Pricing & Free Trial</li>
@@ -24,7 +24,7 @@ function PublicFooter({hideImage} : {hideImage  ?: boolean}) {
                 <li className="font-poppin font-normal text-[22px] leading-[100%] text-[#FFFFFF]">Careers</li>
             </ul>
         </div>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col max-md:ml-[60px]">
             <h3 className="font-semibold font-poppin text-[32px] text-[#E5E5E5] mb-3">Resources</h3>
             <ul className="flex flex-col gap-6">
                 <li className="font-poppin font-normal text-[22px] leading-[100%] text-[#FFFFFF]">Sisu 101: Webinar Series</li>
@@ -35,7 +35,7 @@ function PublicFooter({hideImage} : {hideImage  ?: boolean}) {
             </ul>
         </div>
        
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col max-md:mr-[50px]">
            <div className="flex flex-col">
             <h3 className="font-semibold font-poppin text-[32px] text-[#E5E5E5] mb-3">Follow Us</h3>
             <div className="flex gap-3"> 

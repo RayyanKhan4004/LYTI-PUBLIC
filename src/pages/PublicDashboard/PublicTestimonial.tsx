@@ -15,7 +15,7 @@ function PublicTestimonial({ onclick }: PublicTestimonialProps) {
       }
     };
   return (
-    <div className="w-full flex items-center mt-[80px] justify-center">
+    <div className="w-full flex items-center justify-center mt-[80px]">
       <div className="md:w-fit justify-between flex max-2xl:flex-col max-2xl:justify-center items-center gap-8 xl:gap-12">
         <div className="max-w-[50%] flex flex-col gap-[20px] font-poppin relative md:self-start ">
           <div className="absolute -left-10 -top-13">
@@ -29,7 +29,7 @@ function PublicTestimonial({ onclick }: PublicTestimonialProps) {
             and automating their business with Sisu accountability, business
             analytics and transaction management software.
           </p>
-          <div className="mt-[5px]  z-[11]">
+          <div className="mt-[5px] z-[11]">
             <button className="bg-[#333333] font-poppin text-white font-semibold pt-[12px] pr-[16px] pb-[12px] pl-[16px] rounded-[10px]">
               Schedule Demo
             </button>

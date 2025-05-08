@@ -14,11 +14,11 @@ function PublicDashboardNavbar() {
 
   useEffect(() => {
     // Set initial window width
-    setWindowWidth(window.screen.availWidth);
+    setWindowWidth(window.innerWidth);
 
     // Add resize listener
     const handleResize = () => {
-      setWindowWidth(window.screen.availWidth);
+      setWindowWidth(window.innerWidth);
     };
 
     window.addEventListener('resize', handleResize);
